@@ -10,8 +10,8 @@ const canvas = document.getElementById("canvas");
 			const xsymbolImage = new Image();
 			xsymbolImage.src = "http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/pink-jelly-icons-alphanumeric/073314-pink-jelly-icon-alphanumeric-x-solid.png" ;			
 			
-			const oImage = new Image();
-			oImage.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Twemoji_2665.svg/2000px-Twemoji_2665.svg.png";
+			const osymbolImage = new Image();
+			osymbolImage.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Twemoji_2665.svg/2000px-Twemoji_2665.svg.png";
 			
 			
 			
@@ -46,7 +46,7 @@ const canvas = document.getElementById("canvas");
 						if(gameboarder[i][j] === 'x')
 							context.drawImage(xsymbolImage, i*(canvas.width/3), j*(canvas.height/3), canvas.width/3, canvas.height/3);
 						else if(gameboarder[i][j] === 'o')
-								context.drawImage(oImage, i*(canvas.width/3), j*(canvas.height/3), canvas.width/3, canvas.height/3);
+								context.drawImage(osymbolImage, i*(canvas.width/3), j*(canvas.height/3), canvas.width/3, canvas.height/3);
 					}
 			};
 			
